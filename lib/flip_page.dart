@@ -52,8 +52,8 @@ class _FlipPageState extends State<FlipPage> with TickerProviderStateMixin {
         Container(
           margin: EdgeInsets.symmetric(vertical: 50, horizontal: 50),
           child: GestureDetector(
-            // onTap: _animator.flip,
-            onTap: () => Navigator.push(context, FlipRoute((c) => FlipPage2())),
+            onTap: _animator.flip,
+            // onTap: () => Navigator.push(context, FlipRoute((c) => FlipPage2())),
             child: Material(
               child: Container(
                 color: Colors.white,
